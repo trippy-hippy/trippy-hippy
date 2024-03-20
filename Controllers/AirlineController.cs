@@ -39,6 +39,20 @@ public IActionResult Create(Airline airline)
 }
 
     // PUT action
+    [HttpPut("{id}")]
+public IActionResult Update(int id, Airline airline)
+{
+    if (id != airline.Id)
+        return BadRequest();
+           
+    var existingAirline = AirlineService.Get(id);
+    if(existingAirline is null)
+        return NotFound();
+   
+    AirlineService.Update(airline);           
+   
+    return NoContent();
+}
 
     // DELETE action
 }
