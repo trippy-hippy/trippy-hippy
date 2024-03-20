@@ -13,8 +13,21 @@ public class AirlineController : ControllerBase
     }
 
     // GET all action
+    [HttpGet]
+public ActionResult<List<Airline>> GetAll() =>
+    AirlineService.GetAll();
 
     // GET by Id action
+    [HttpGet("{id}")]
+public ActionResult<Airline> Get(int id)
+{
+    var airline = AirlineService.Get(id);
+
+    if(airline == null)
+        return NotFound();
+
+    return airline;
+}
 
     // POST action
 
