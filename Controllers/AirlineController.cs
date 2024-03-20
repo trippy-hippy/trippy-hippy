@@ -55,4 +55,17 @@ public IActionResult Update(int id, Airline airline)
 }
 
     // DELETE action
+    [HttpDelete("{id}")]
+public IActionResult Delete(int id)
+{
+    var airline = AirlineService.Get(id);
+   
+    if (airline is null)
+        return NotFound();
+       
+    AirlineService.Delete(id);
+   
+    return NoContent();
+}
+
 }
