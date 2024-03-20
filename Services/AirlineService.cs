@@ -28,7 +28,7 @@ public static class AirlineService
     public static void Delete(int id)
     {
         var airline = Get(id);
-        if(airline is null)
+        if (airline is null)
             return;
 
         Airlines.Remove(airline);
@@ -37,7 +37,7 @@ public static class AirlineService
     public static void Update(Airline airline)
     {
         var index = Airlines.FindIndex(p => p.Id == airline.Id);
-        if(index == -1)
+        if (index == -1)
             return;
 
         Airlines[index] = airline;
