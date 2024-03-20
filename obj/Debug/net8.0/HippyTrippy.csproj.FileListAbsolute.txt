@@ -30,3 +30,4 @@
 /Users/jacoblars85/Desktop/code/fun/HippyTrippy/obj/Debug/net8.0/HippyTrippy.pdb
 /Users/jacoblars85/Desktop/code/fun/HippyTrippy/obj/Debug/net8.0/HippyTrippy.genruntimeconfig.cache
 /Users/jacoblars85/Desktop/code/fun/HippyTrippy/obj/Debug/net8.0/ref/HippyTrippy.dll
+/Users/jacoblars85/Desktop/code/fun/HippyTrippy/obj/Debug/net8.0/HippyTrippy.sourcelink.json
