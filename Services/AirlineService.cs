@@ -11,7 +11,11 @@ public static class AirlineService
         Airlines = new List<Airline>
         {
             new Airline { Id = 1, Name = "Delta", Cost = 1000 },
-            new Airline { Id = 2, Name = "Sun Country", Cost = 500 }
+            new Airline { Id = 2, Name = "Sun Country", Cost = 500 },
+            new Airline { Id = 3, Name = "American Airlines", Cost = 300 },
+            new Airline { Id = 4, Name = "Spirit Airline", Cost = 50 },
+            new Airline { Id = 5, Name = "Allegiant Air", Cost = 200 },
+            new Airline { Id = 6, Name = "Southwest Airlines", Cost = 100 }
         };
     }
 
