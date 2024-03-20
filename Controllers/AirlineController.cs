@@ -31,6 +31,13 @@ public ActionResult<Airline> Get(int id)
 
     // POST action
 
+    [HttpPost]
+public IActionResult Create(Airline airline)
+{            
+    AirlineService.Add(airline);
+    return CreatedAtAction(nameof(Get), new { id = airline.Id }, airline);
+}
+
     // PUT action
 
     // DELETE action
