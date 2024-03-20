@@ -14,58 +14,58 @@ public class AirlineController : ControllerBase
 
     // GET all action
     [HttpGet]
-public ActionResult<List<Airline>> GetAll() =>
+    public ActionResult<List<Airline>> GetAll() =>
     AirlineService.GetAll();
 
     // GET by Id action
     [HttpGet("{id}")]
-public ActionResult<Airline> Get(int id)
-{
-    var airline = AirlineService.Get(id);
+    public ActionResult<Airline> Get(int id)
+    {
+        var airline = AirlineService.Get(id);
 
-    if(airline == null)
-        return NotFound();
+        if (airline == null)
+            return NotFound();
 
-    return airline;
-}
+        return airline;
+    }
 
     // POST action
 
     [HttpPost]
-public IActionResult Create(Airline airline)
-{            
-    AirlineService.Add(airline);
-    return CreatedAtAction(nameof(Get), new { id = airline.Id }, airline);
-}
+    public IActionResult Create(Airline airline)
+    {
+        AirlineService.Add(airline);
+        return CreatedAtAction(nameof(Get), new { id = airline.Id }, airline);
+    }
 
     // PUT action
     [HttpPut("{id}")]
-public IActionResult Update(int id, Airline airline)
-{
-    if (id != airline.Id)
-        return BadRequest();
-           
-    var existingAirline = AirlineService.Get(id);
-    if(existingAirline is null)
-        return NotFound();
-   
-    AirlineService.Update(airline);           
-   
-    return NoContent();
-}
+    public IActionResult Update(int id, Airline airline)
+    {
+        if (id != airline.Id)
+            return BadRequest();
+
+        var existingAirline = AirlineService.Get(id);
+        if (existingAirline is null)
+            return NotFound();
+
+        AirlineService.Update(airline);
+
+        return NoContent();
+    }
 
     // DELETE action
     [HttpDelete("{id}")]
-public IActionResult Delete(int id)
-{
-    var airline = AirlineService.Get(id);
-   
-    if (airline is null)
-        return NotFound();
-       
-    AirlineService.Delete(id);
-   
-    return NoContent();
-}
+    public IActionResult Delete(int id)
+    {
+        var airline = AirlineService.Get(id);
+
+        if (airline is null)
+            return NotFound();
+
+        AirlineService.Delete(id);
+
+        return NoContent();
+    }
 
 }
