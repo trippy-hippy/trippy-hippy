@@ -66,3 +66,5 @@
 /Users/bradensoller/Desktop/Prime-Academy/trippy-hippy/obj/Debug/net8.0/HippyTrippy.pdb
 /Users/bradensoller/Desktop/Prime-Academy/trippy-hippy/obj/Debug/net8.0/HippyTrippy.genruntimeconfig.cache
 /Users/bradensoller/Desktop/Prime-Academy/trippy-hippy/obj/Debug/net8.0/ref/HippyTrippy.dll
+/Users/jacoblars85/Desktop/code/fun/HippyTrippy/bin/Debug/net8.0/package.json
+/Users/jacoblars85/Desktop/code/fun/HippyTrippy/bin/Debug/net8.0/package-lock.json
