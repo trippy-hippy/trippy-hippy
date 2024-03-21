@@ -1,4 +1,4 @@
-@HippyTrippy_HostAddress = http://localhost:5189
+@HippyTrippy_HostAddress = http://localhost:5188
 
 GET {{HippyTrippy_HostAddress}}/weatherforecast/
 Accept: application/json
