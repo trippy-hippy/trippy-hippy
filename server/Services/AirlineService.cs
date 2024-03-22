@@ -5,7 +5,7 @@ namespace HippyTrippy.Services;
 public static class AirlineService
 {
     static List<Airline> Airlines { get; }
-    static int nextId = 3;
+    static int nextId = 7;
     static AirlineService()
     {
         Airlines = new List<Airline>
