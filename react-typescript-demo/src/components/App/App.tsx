@@ -15,12 +15,12 @@ function App() {
     getAirlines();
   }, []);
 
-  const [airlines, setAirlines] = useState([{id: 0, airline: "Delta", cost: 1000, }]);
+  const [airlines, setAirlines] = useState([{ id: 0, airline: "Delta", cost: 1000, }]);
 
   const getAirlines = () => {
     axios({
       method: "GET",
-      url: `/api/characters/basic`,
+      url: `/Airline`,
     })
       .then((response) => {
         setAirlines(response.data);
