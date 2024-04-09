@@ -2482,19 +2482,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/jacoblars85/.nuget/packages/": {}
+    "/Users/bradensoller/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jacoblars85/Desktop/code/fun/trippy-hippy/server/HippyTrippy.csproj",
+      "projectUniqueName": "/Users/bradensoller/Desktop/Prime-Academy/hippytrippy2/trippy-hippy/server/HippyTrippy.csproj",
       "projectName": "HippyTrippy",
-      "projectPath": "/Users/jacoblars85/Desktop/code/fun/trippy-hippy/server/HippyTrippy.csproj",
-      "packagesPath": "/Users/jacoblars85/.nuget/packages/",
-      "outputPath": "/Users/jacoblars85/Desktop/code/fun/trippy-hippy/server/obj/",
+      "projectPath": "/Users/bradensoller/Desktop/Prime-Academy/hippytrippy2/trippy-hippy/server/HippyTrippy.csproj",
+      "packagesPath": "/Users/bradensoller/.nuget/packages/",
+      "outputPath": "/Users/bradensoller/Desktop/Prime-Academy/hippytrippy2/trippy-hippy/server/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/jacoblars85/.nuget/NuGet/NuGet.Config"
+        "/Users/bradensoller/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2512,6 +2512,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2550,7 +2555,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
